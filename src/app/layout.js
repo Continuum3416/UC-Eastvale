@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "UC Eastvale",
-  description: "The #1 university in the world",
+  description: "The #1 university in the world — UC Eastvale. A world-class institution shaping tomorrow’s leaders through innovation, excellence, and a global vision. Join a legacy of greatness and take your place among the world’s top minds.",
 };
 
 export default function RootLayout({ children }) {
@@ -21,9 +21,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel='icon' href='/favicon.png' type="image/png"/>
-        <meta property="og:description" content="The #1 university in the world" />
-        <meta property="og:url" content="https://uceastvale.vercel.app/" />
-        <meta name="twitter:card" content="summary_large_image" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
