@@ -181,7 +181,7 @@ export default function Home() {
                     to <em>cutting-edge sciences and technology</em>—we offer a
                     learning experience designed for a rapidly evolving world.
                     Whether you're pursuing an <strong>Undergraduate</strong>,{" "}
-                    <strong>Master’s</strong>, or <strong>PhD</strong> degree,
+                    <strong>Master's</strong>, or <strong>PhD</strong> degree,
                     our flexible academic pathways are tailored to support your{" "}
                     <span className="italic">
                       personal and professional growth
@@ -194,7 +194,7 @@ export default function Home() {
                     San Antonio College. Our engineering program is renowned for
                     its cutting-edge research, hands-on learning opportunities,
                     and exceptional faculty who are leaders in their fields. But
-                    our excellence doesn’t stop there. We are also home to the
+                    our excellence doesn't stop there. We are also home to the
                     #1 Art School in the country, where creativity meets
                     innovation. Our art students consistently earn top awards,
                     exhibit internationally, and shape the future of design,
