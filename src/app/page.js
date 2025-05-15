@@ -25,7 +25,7 @@ export default function Home() {
       image: "/images/ucev2.png",
       title: "Excellence in Education",
       description:
-        "Inspiring the next generation of leaders and innovators. Proud to be the #1 most corrupt university in the nation.",
+        "Inspiring the next generation of leaders and innovators. Proud to be the #1 university in the lowest graduation rate.",
     },
     {
       image: "/images/ucev3.png",
