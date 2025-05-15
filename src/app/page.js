@@ -45,7 +45,7 @@ export default function Home() {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [slides.length]); // ✅ Fix: added dependency
+  }, [slides.length]);
 
   const newsItems = [
     {
@@ -179,8 +179,8 @@ export default function Home() {
                     range of disciplines—from the <em>arts and humanities</em>{" "}
                     to <em>cutting-edge sciences and technology</em>—we offer a
                     learning experience designed for a rapidly evolving world.
-                    Whether you're pursuing an <strong>Undergraduate</strong>,{" "}
-                    <strong>Master's</strong>, or <strong>PhD</strong> degree,
+                    Whether you&apos;re pursuing an <strong>Undergraduate</strong>,{" "}
+                    <strong>Master&apos;s</strong>, or <strong>PhD</strong> degree,
                     our flexible academic pathways are tailored to support your{" "}
                     <span className="italic">
                       personal and professional growth
