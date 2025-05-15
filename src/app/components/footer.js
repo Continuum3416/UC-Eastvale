@@ -76,11 +76,11 @@ const Footer = () => {
           </div>
           
           <div className="border-t border-gray-700 pt-6">
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row justify-between items-start sm:items-center">
               <p className="text-sm text-gray-400">
                 © 2025 UC Eastvale. All rights reserved.
               </p>
-              <div className="flex space-x-4 mt-4 md:mt-0">
+              <div className="flex flex-col sm:flex-row sm:space-x-4 mt-4 md:mt-0 text-left">
                 <a href="#" className="text-sm text-gray-400 hover:text-white">Privacy Policy</a>
                 <a href="#" className="text-sm text-gray-400 hover:text-white">Terms of Use</a>
                 <a href="#" className="text-sm text-gray-400 hover:text-white">Accessibility</a>

@@ -21,6 +21,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel='icon' href='/favicon.png' type="image/png"/>
+        <meta property="og:description" content="The #1 university in the world" />
+        <meta property="og:image" content="https://uceastvale.vercel.app/images/ucev.png" />
+        <meta property="og:url" content="https://uceastvale.vercel.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -11,34 +11,12 @@ import QuickLinks from "./components/quicklinks";
 import ProgramSlider from "./components/programs";
 import AlumniGrid from "./components/alumni";
 
+// data
+import { slides } from "./data/slides";
+import { newsItems } from "./data/news";
+
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      image: "/images/ucev.png",
-      title: "The Absolute Best University in the World, #1",
-      description:
-        "Stanford, MIT, Caltech? We are not familiar with those names.",
-    },
-    {
-      image: "/images/ucev2.png",
-      title: "Excellence in Education",
-      description:
-        "Inspiring the next generation of leaders and innovators. Proud to be the #1 university in the lowest graduation rate.",
-    },
-    {
-      image: "/images/ucev3.png",
-      title: "Groundbreaking Research",
-      description:
-        "Birthplace of the IRS, NASA, the Internet, CERN, and the FBI. Home to some of the most brilliant minds in the last 200 years",
-    },
-    {
-      image: "/images/ucev4.png",
-      title: "Vibrant Campus Life",
-      description: "Join a diverse community of scholars and creators.",
-    },
-  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,33 +24,6 @@ export default function Home() {
     }, 5000);
     return () => clearInterval(interval);
   }, [slides.length]);
-
-  const newsItems = [
-    {
-      date: "May 10, 2025",
-      title: "Professor Elvis Awarded 5th Nobel Prize in Physics",
-      excerpt:
-        "The prestigious award recognizes ground-breaking contributions to quantum computing, material science, condensed matter physics, astrophysics and fluid dynamics research.",
-    },
-    {
-      date: "May 9, 2025",
-      title: "Men's Sperm Racing Advances to Final Four",
-      excerpt:
-        "The team secured a dramatic victory in the regional finals, narrowly edged out USC.",
-    },
-    {
-      date: "May 8, 2025",
-      title: "UC Eastvale Launches Climate Initiative",
-      excerpt:
-        "New program aims to achieve carbon partiality by 2030. We're proud to be pioneers in climate change research, except we're changing the climate ourselves.",
-    },
-    {
-      date: "May 5, 2025",
-      title: "How to Barely Stay Out of Academic Probation",
-      excerpt:
-        "New course offer for freshmen and transfer students. Is academic probation necessarily a bad thing? Here's 5 ways how F's might be good for you.",
-    },
-  ];
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
