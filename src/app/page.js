@@ -45,7 +45,7 @@ export default function Home() {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]); // ✅ Fix: added dependency
 
   const newsItems = [
     {
@@ -73,8 +73,6 @@ export default function Home() {
         "New course offer for freshmen and transfer students. Is academic probation necessarily a bad thing? Here's 5 ways how F's might be good for you.",
     },
   ];
-
-  // "New Course Offers \"How to Fake Understanding in Group Projects Without Doing Anything\""
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
@@ -162,6 +160,7 @@ export default function Home() {
                   ))}
                 </div>
               </section>
+
               <section>
                 <div className="flex justify-between items-center mt-12 mb-6">
                   <h2 className="text-2xl font-bold text-blue-900">
@@ -194,7 +193,7 @@ export default function Home() {
                     San Antonio College. Our engineering program is renowned for
                     its cutting-edge research, hands-on learning opportunities,
                     and exceptional faculty who are leaders in their fields. But
-                    our excellence doesn't stop there. We are also home to the
+                    our excellence doesn&rsquo;t stop there. We are also home to the
                     #1 Art School in the country, where creativity meets
                     innovation. Our art students consistently earn top awards,
                     exhibit internationally, and shape the future of design,
@@ -206,7 +205,7 @@ export default function Home() {
                   </p>
                   <p>
                     Education at UC Eastvale goes{" "}
-                    <strong>beyond the classroom</strong>. You’ll gain{" "}
+                    <strong>beyond the classroom</strong>. You&rsquo;ll gain{" "}
                     <span className="font-semibold">hands-on experience</span>{" "}
                     through{" "}
                     <em>
@@ -234,8 +233,8 @@ export default function Home() {
                     create, and lead. With{" "}
                     <strong>state-of-the-art facilities</strong>,{" "}
                     <strong>world-renowned faculty</strong>, and a deep-rooted
-                    commitment to <em>community and social impact</em>, we don’t
-                    just prepare students for jobs—we prepare them to{" "}
+                    commitment to <em>community and social impact</em>, we don&rsquo;t
+                    just prepare students for jobs&mdash;we prepare them to{" "}
                     <span className="font-bold">make a difference</span>. UC
                     Eastvale: This is where your journey begins, and your future
                     takes flight.
@@ -252,12 +251,12 @@ export default function Home() {
                   </h2>
                 </div>
                 <p className="text-gray-700 mb-12">
-                  At our university, excellence doesn’t end at graduation—it
+                  At our university, excellence doesn&rsquo;t end at graduation&mdash;it
                   begins there. Our alumni have gone on to lead nations,
                   revolutionize technology, transform the arts, and redefine the
                   frontiers of science. With a legacy of visionary thinkers,
                   influential leaders, and cultural icons, the impact of our
-                  graduates resonates around the globe. Here, we don’t just
+                  graduates resonates around the globe. Here, we don&rsquo;t just
                   educate; we empower individuals to shape the future. Join a
                   community where ambition is nurtured and greatness is not the
                   exception, but the expectation.
@@ -271,11 +270,9 @@ export default function Home() {
                     Housing & Residential Life
                   </h2>
                 </div>
-                <h3 className="font-bold text-base">
-                  A Place to Call Home
-                </h3>
+                <h3 className="font-bold text-base">A Place to Call Home</h3>
                 <p>
-                  Living on campus is more than just convenience—it’s a vital
+                  Living on campus is more than just convenience&mdash;it&rsquo;s a vital
                   part of the university experience. Our housing communities are
                   designed to support student success, build lifelong
                   friendships, and create a strong sense of belonging. From
@@ -333,7 +330,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
